@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  *::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+@layer components{
+  .column{
+    @apply flex flex-col
+  }
+  .menu{
+    @apply flex items-center justify-start gap-5 px-3 w-full py-4 rounded-lg hover:bg-white/10 transition-all duration-300
+  }
+  .textfield{
+    @apply px-4 py-2 outline-none ring-1 ring-dark rounded-lg
+  }
+}
+
